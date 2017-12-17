@@ -8,7 +8,7 @@
 
 
     <EditText
-        android:id="@+id/Voltage"
+        android:id="@+id/voltage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -22,13 +22,13 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Voltage"
+        android:layout_below="@+id/voltage"
         android:layout_centerHorizontal="true"
         android:text="電圧(V)"
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/Intensity"
+        android:id="@+id/intensity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
@@ -41,7 +41,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Intensity"
+        android:layout_below="@+id/intensity"
         android:layout_centerHorizontal="true"
         android:text="電流(A)"
         android:textSize="24sp" />

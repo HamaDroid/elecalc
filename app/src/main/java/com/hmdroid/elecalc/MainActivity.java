@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void registnce(View view) {
-        Voltage = (EditText) findViewById(R.id.Voltage);
-        Intensity = (EditText) findViewById(R.id.Intensity);
+        Voltage = (EditText) findViewById(R.id.voltage);
+        Intensity = (EditText) findViewById(R.id.intensity);
 
         int v = Integer.parseInt(Voltage.getText().toString());
         int i = Integer.parseInt(Intensity.getText().toString());
