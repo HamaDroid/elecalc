@@ -1,11 +1,12 @@
 package com.hmdroid.elecalc;
 
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
+        import android.support.v7.app.AlertDialog;
+        import android.support.v7.app.AppCompatActivity;
+        import android.os.Bundle;
+        import android.view.View;
+        import android.widget.EditText;
+
+        import java.math.BigDecimal;
 
 public class MainActivity extends AppCompatActivity {
     EditText Voltage;
@@ -19,15 +20,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void registnce(View view) {
         Voltage = (EditText) findViewById(R.id.voltage);
-        Intensity = (EditText) findViewById(R.id.intensity);
+        Intensity = (EditText) findViewById(R.id.Intensity);
 
-        int v = Integer.parseInt(Voltage.getText().toString());
-        int i = Integer.parseInt(Intensity.getText().toString());
-        int r = v/i;
+        BigDecimal v =new
+                BigDecimal(Voltage.getText().toString());
+        BigDecimal i = new
+                BigDecimal(Intensity.getText().toString());
+        double r = v.divide(i, 3, BigDecimal.ROUND_HALF_UP).doubleValue();
 
-    AlertDialog.Builder alert01 = new AlertDialog.Builder(this);
-    alert01.setTitle("計算結果");
-    alert01.setMessage(r+"Ωです");
-    alert01.show();
+
+        AlertDialog.Builder alert01 = new AlertDialog.Builder(this);
+        alert01.setTitle("計算結果");
+        alert01.setMessage(r+"Ωです");
+        alert01.show();
     }
 }

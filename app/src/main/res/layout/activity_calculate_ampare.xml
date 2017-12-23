@@ -4,59 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hmdroid.elecalc.MainActivity">
-
+    tools:context="com.hmdroid.elecalc.calculate_ampare">
 
     <EditText
         android:id="@+id/voltage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/voltage"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="33dp"
-        android:ems="10"
-        android:inputType="numberDecimal" />
-
-    <TextView
-        android:id="@+id/TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView6"
-        android:layout_alignStart="@+id/textView6"
-        android:layout_below="@+id/Intensity"
-        android:text="電圧(V)"
-        android:textSize="24sp" />
-
-    <EditText
-        android:id="@+id/Intensity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp"
         android:ems="10"
         android:inputType="numberDecimal" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/TextView"
+        android:layout_below="@+id/voltage"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:text="電流(A)"
+        android:text="電圧(V)"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/resistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_below="@+id/resistance"
+        android:text="抵抗(Ω)"
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/voltage"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView6"
+        android:layout_below="@+id/textView8"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="75dp"
-        android:onClick="registnce"
-        android:text="計算(Ω)"
+        android:onClick="ampare"
+        android:text="計算(A)"
         android:textSize="18sp" />
 </RelativeLayout>
