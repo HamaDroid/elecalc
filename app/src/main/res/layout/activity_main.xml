@@ -53,9 +53,10 @@
         android:id="@+id/voltage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignRight="@+id/textView6"
         android:layout_below="@+id/textView6"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="72dp"
         android:onClick="registnce"
         android:text="計算(Ω)"
         android:textSize="18sp" />

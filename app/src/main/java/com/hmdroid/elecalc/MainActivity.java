@@ -5,7 +5,7 @@ package com.hmdroid.elecalc;
         import android.os.Bundle;
         import android.view.View;
         import android.widget.EditText;
-
+        import android.text.TextWatcher;
         import java.math.BigDecimal;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         BigDecimal v =new
                 BigDecimal(Voltage.getText().toString());
+
         BigDecimal i = new
                 BigDecimal(Intensity.getText().toString());
         double r = v.divide(i, 3, BigDecimal.ROUND_HALF_UP).doubleValue();
